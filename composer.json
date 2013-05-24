@@ -1,0 +1,21 @@
+{
+	"name": "custom-image",
+	"description": "An extension to Silverstripe core Image class. Added methods that renders absolute URLs for GD processed images.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "image", "gd", "custom-image"],
+	"licese": "BSD-3-Clause",
+	"authors": [
+	{
+		"name": "skTzoOoTech",
+		"email": "sktzoootech@gmail.com"
+	}
+	],
+	"extra":{
+	"installer-name": "custom-image"
+	},
+	"require":
+	{
+		"silverstripe/framework": "3.*",
+		"silverstripe/cms": "3.*"
+	}
+}
