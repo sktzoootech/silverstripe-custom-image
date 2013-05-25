@@ -9,7 +9,7 @@
 
 class CustomImageExtension extends DataExtension {
 
-	pubic static $fallback_image = null;
+	public static $fallback_image = null;
 
 	protected function failSafe(){	
 		if(!$this->isValid()){
