@@ -45,7 +45,7 @@ class CustomImageExtension extends DataExtension {
 				rawurlencode($this->owner->CroppedImage($w, $h)->getFilename()));
 	}
 
-	public function setWidthAbsoluteURL($w, $option=1){
+	public function setWidthAbsoluteURL($w){
 		$this->failSafe();
 		return !$this->isValid()
 			? false
@@ -59,5 +59,29 @@ class CustomImageExtension extends DataExtension {
 			? false
 			: Director::absoluteBaseURL().str_replace('%2F','/',
 				rawurlencode($this->owner->SetSize($w,$h)->getFilename()));
+	}
+
+	public function setHeightAbsoluteURL($h){
+		$this->failSafe();
+		return !$this->isValid()
+			? false
+			: Director::absoluteBaseURL().str_replace('%2F','/',
+				rawurlencode($this->owner->SetHeight($h)->getFilename()));
+	}
+
+	public function paddedImageAbsoluteURL($w, $h){
+		$this->failSafe();
+		return !$this->isValid()
+			? false
+			: Director::absoluteBaseURL().str_replace('%2F','/',
+				rawurlencode($this->owner->PaddedImage($w, $h)->getFilename()));
+	}
+
+	public function setRatioSizeAbsoluteURL($w, $h){
+		$this->failSafe();
+		return !$this->isValid()
+			? false
+			: Director::absoluteBaseURL().str_replace('%2F','/',
+				rawurlencode($this->owner->SetRatioSize($w, $h)->getFilename()));
 	}
 }
