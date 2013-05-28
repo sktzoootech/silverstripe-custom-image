@@ -1,5 +1,5 @@
 {
-	"name": "custom-image",
+	"name": "silverstripe/custom-image",
 	"description": "An extension to Silverstripe core Image class. Added methods that renders absolute URLs for GD processed images.",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "image", "gd", "custom-image"],
